@@ -2,10 +2,137 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+
+    <meta
+        name="description"
+        content="WDD231 course home page for Web Frontend Development."
+    >
+
+    <meta name="author" content="OLUWAGBEMI YOLOYE">
+
+    <title>OLUWAGBEMI YOLOYE | WDD231 Course Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 231 - Oluwagbemi C. Yoloye</h1>
+
+    <header>
+        <div class="header-content">
+
+            <div class="site-identity">
+                <img
+                    src="images/site-logo.svg"
+                    alt="Oluwagbemi Yoloye Site logo"
+                >
+
+                <span>OLUWAGBEMI YOLOYE</span>
+            </div>
+
+            <button
+                type="button"
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+        </div>
+
+        <nav id="main-navigation">
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">Chamber Project</a>
+                </li>
+
+                <li>
+                    <a href="#">Final Project</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Home</h1>
+
+        <section class="about-section">
+            <h2>About Me</h2>
+
+            <p>
+                I am a Software Development student interested in web development, automation, and technology. I enjoy learning how software can solve real-world problems and I am developing my skills in frontend development, programming, and automation.
+            </p>
+        </section>
+
+        <section class="photo-section">
+            <h2>Student Photo</h2>
+
+            <img
+                src="images/student-photo.webp"
+                alt="Oluwagbemi Yoloye"
+            >
+        </section>
+
+        <section class="courses-section">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-buttons">
+                <button id="all-courses">All</button>
+                <button id="wdd-courses">WDD</button>
+                <button id="cse-courses">CSE</button>
+            </div>
+
+            <div id="course-container">
+                
+            </div>
+
+            <p>
+                The total credits for courses listed above is
+                <span id="total-credits">0</span>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/oluwagbemi-yoloye-539a49aa/" aria-label="LinkedIn">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/gbemi001" aria-label="GitHub">
+                GitHub
+            </a>
+
+            <a href="https://x.com/gbemi_stargazer" aria-label="X">
+                X
+            </a>
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            OLUWAGBEMI YOLOYE • NIGERIA
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
 </body>
 </html>

@@ -1,0 +1,80 @@
+
+@media screen and (min-width: 768px) {
+
+    .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
+    .site-identity span {
+        font-size: 1.35rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        background-color: #102638;
+    }
+
+    nav ul {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        border-top: none;
+    }
+
+    nav a {
+        padding: 1rem 1.5rem;
+        transition: background-color 0.2s ease;
+    }
+
+    main {
+        padding: 2rem 0 3rem;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .about-section,
+    .photo-section {
+    min-height: 100%;
+}
+
+    #course-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    main > h1 {
+        grid-column: 1 / -1;
+    }
+
+    .courses-section {
+    grid-column: 1 / -1;
+    }   
+
+    #course-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
