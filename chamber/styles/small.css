@@ -1,0 +1,458 @@
+:root {
+    --primary-color: #006b3f;
+    --primary-dark: #004d2d;
+    --secondary-color: #d4a017;
+    --background-color: #f5f7f5;
+    --surface-color: #ffffff;
+    --card-color: #ffffff;
+    --text-color: #1f2933;
+    --muted-text: #5f6b66;
+    --border-color: #d8dedb;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    --font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+
+body.dark-mode {
+    --background-color: #121816;
+    --surface-color: #1c2421;
+    --card-color: #202a26;
+    --text-color: #f1f5f3;
+    --muted-text: #c3ceca;
+    --border-color: #3b4843;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.site-header {
+    background-color: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.75rem 1rem;
+}
+
+.header-inner {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 0.75rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.brand img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.brand span {
+    font-size: 1rem;
+    line-height: 1.15;
+}
+
+#menu-button,
+#theme-button {
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--border-color);
+    border-radius: 0.4rem;
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    font-size: 1.25rem;
+}
+
+#menu-button:hover,
+#theme-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#menu-button:focus-visible,
+#theme-button:focus-visible,
+.view-button:focus-visible,
+a:focus-visible {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+.primary-navigation {
+    display: none;
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.5rem;
+}
+
+.primary-navigation.open {
+    display: block;
+}
+
+.primary-navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.primary-navigation a {
+    display: block;
+    padding: 0.7rem 0.75rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 0.35rem;
+    font-weight: 600;
+}
+
+.primary-navigation a:hover,
+.primary-navigation a[aria-current="page"] {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+main {
+    width: min(100% - 2rem, 1200px);
+    margin: 0 auto;
+    padding: 1.5rem 0 2.5rem;
+}
+
+main>h1 {
+    width: 100%;
+    margin: 0 auto 1.25rem;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.view-controls {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.view-button {
+    min-width: 90px;
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.35rem;
+    background-color: var(--surface-color);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.view-button.active-view,
+.view-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.page-heading {
+    width: 100%;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+}
+
+.page-heading h1 {
+    margin: 0 0 1rem;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.directory-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.view-button {
+    min-width: 90px;
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.35rem;
+    background-color: var(--surface-color);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.view-button.active-view,
+.view-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.member-card {
+    overflow: hidden;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.member-card-header {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.member-card-header h2 {
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.3;
+}
+
+.member-tagline {
+    margin: 0.35rem 0 0;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.member-card-body {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.member-image {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    padding: 0.35rem;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 0.35rem;
+}
+
+.member-details {
+    min-width: 0;
+}
+
+.member-details p {
+    margin: 0 0 0.45rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.member-details strong {
+    color: var(--primary-color);
+}
+
+.member-details a {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.membership-level {
+    display: inline-block;
+    margin-top: 0.35rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    background-color: var(--secondary-color);
+    color: #1f2933;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 0.35rem;
+    overflow: hidden;
+}
+
+.member-list .member-card {
+    display: block;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+}
+
+.member-list .member-card-header {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+.member-list .member-card-header h2 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.member-list .member-tagline {
+    display: none;
+}
+
+.member-list .member-card-body {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr 1.1fr 2fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.9rem 1rem;
+}
+
+.member-list .member-image {
+    display: block;
+    width: 55px;
+    height: 55px;
+    padding: 0.25rem;
+}
+
+.member-list .member-details {
+    display: contents;
+}
+
+.member-list .member-details p:nth-child(1) {
+    grid-column: 2;
+}
+
+.member-list .member-details p:nth-child(2) {
+    grid-column: 3;
+}
+
+.member-list .member-details p:nth-child(3) {
+    grid-column: 4;
+}
+
+.member-list .member-details strong {
+    display: none;
+}
+
+.member-list .membership-level {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    justify-self: start;
+}
+
+.member-list .member-card:nth-child(even) .member-card-body {
+    background-color: var(--light-accent);
+}
+
+.member-list .member-details p {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.member-list .member-details a {
+    overflow-wrap: anywhere;
+}
+
+footer {
+    display: grid;
+    gap: 1.5rem;
+
+    padding: 2rem 1rem;
+
+    background-color: var(--primary-color);
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.footer-contact,
+.footer-development {
+    line-height: 1.6;
+}
+
+.footer-contact p,
+.footer-development p {
+    margin: 0.2rem 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 75px;
+    min-height: 40px;
+
+    padding: 0.4rem 0.6rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 0.85rem;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    background-color: var(--secondary-color);
+    color: #1f2933;
+}
+
+@media screen and (max-width: 359px) {
+
+    .site-header {
+        padding: 0.6rem 0.7rem;
+        gap: 0.4rem;
+    }
+
+    .brand {
+        font-size: 0.9rem;
+    }
+
+    .brand img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .member-card-body {
+        grid-template-columns: 80px 1fr;
+        gap: 0.75rem;
+    }
+
+    .member-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    main {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}

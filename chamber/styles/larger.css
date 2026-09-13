@@ -1,0 +1,143 @@
+@media screen and (min-width: 700px) {
+
+    .site-header {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        grid-template-columns: auto 1fr auto;
+
+        min-height: 80px;
+
+        padding: 0.75rem 1.5rem;
+    }
+
+    .brand {
+        font-size: 1.1rem;
+    }
+
+    .brand img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .theme-button {
+        margin-left: 1rem;
+    }
+
+    .navigation {
+        display: flex;
+
+        grid-column: auto;
+
+        flex-direction: row;
+        justify-content: flex-end;
+
+        background-color: transparent;
+    }
+
+    .navigation a {
+        padding: 0.6rem 0.8rem;
+
+        border: none;
+
+        color: var(--text-color);
+    }
+
+    .navigation a:hover,
+    .navigation a:focus {
+        border-radius: 4px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    main {
+        padding: 1.5rem 2rem 3rem;
+    }
+
+    .page-heading {
+        margin-bottom: 1.5rem;
+    }
+
+    .page-heading h1 {
+        font-size: 2.2rem;
+    }
+
+    .directory-controls {
+        gap: 1rem;
+    }
+
+    .member-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 1.25rem;
+    }
+
+    .member-card-body {
+        grid-template-columns: 85px 1fr;
+
+        gap: 0.75rem;
+
+        padding: 0.9rem;
+    }
+
+    .member-image {
+        width: 85px;
+        height: 85px;
+    }
+
+    .member-details {
+        font-size: 0.82rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .site-header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .member-grid {
+        gap: 1.5rem;
+    }
+
+    .member-card-body {
+        grid-template-columns: 90px 1fr;
+
+        padding: 1rem;
+    }
+
+    .member-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .member-details {
+        font-size: 0.85rem;
+    }
+
+    footer {
+        grid-template-columns:
+            1fr auto 1fr;
+
+        align-items: center;
+
+        max-width: 100%;
+        padding: 2rem calc((100% - 1200px) / 2);
+        text-align: left;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-development {
+        text-align: right;
+    }
+}

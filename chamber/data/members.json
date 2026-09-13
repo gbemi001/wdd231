@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Kaduna Business Hub",
+        "tagline": "Supporting Kaduna entrepreneurs",
+        "address": "12 Ahmadu Bello Way, Kaduna, Kaduna State",
+        "phone": "+234 800 100 1001",
+        "website": "https://example.com/kaduna-business-hub",
+        "image": "kaduna-business-hub.svg",
+        "membershipLevel": 3,
+        "description": "A business support organization providing networking, training, and resources for entrepreneurs and growing businesses in Kaduna."
+    },
+    {
+        "name": "Arewa Tech Solutions",
+        "tagline": "Technology for a smarter future",
+        "address": "24 Independence Way, Kaduna, Kaduna State",
+        "phone": "+234 800 100 1002",
+        "website": "https://example.com/arewa-tech",
+        "image": "arewa-tech-solutions.svg",
+        "membershipLevel": 3,
+        "description": "A technology services company helping organizations improve productivity through digital solutions, IT support, and business automation."
+    },
+    {
+        "name": "Kaduna Fresh Market",
+        "tagline": "Fresh food, local quality",
+        "address": "8 Constitution Road, Kaduna, Kaduna State",
+        "phone": "+234 800 100 1003",
+        "website": "https://example.com/kaduna-fresh-market",
+        "image": "kaduna-fresh-market.svg",
+        "membershipLevel": 2,
+        "description": "A local food distribution business connecting Kaduna households and businesses with fresh agricultural products."
+    },
+    {
+        "name": "Savannah Creative Studio",
+        "tagline": "Creative ideas that grow brands",
+        "address": "16 Kachia Road, Kaduna, Kaduna State",
+        "phone": "+234 800 100 1004",
+        "website": "https://example.com/savannah-creative",
+        "image": "savannah-creative-studio.svg",
+        "membershipLevel": 2,
+        "description": "A creative agency offering graphic design, branding, digital marketing, photography, and content services to local businesses."
+    },
+    {
+        "name": "Northern Heights Construction",
+        "tagline": "Building Kaduna's future",
+        "address": "31 Yakubu Gowon Way, Kaduna, Kaduna State",
+        "phone": "+234 800 100 1005",
+        "website": "https://example.com/northern-heights",
+        "image": "northern-heights-construction.svg",
+        "membershipLevel": 3,
+        "description": "A construction and property development company serving residential, commercial, and community development projects."
+    },
+    {
+        "name": "Kaduna Learning Centre",
+        "tagline": "Learning today, leading tomorrow",
+        "address": "7 Rabah Road, Kaduna, Kaduna State",
+        "phone": "+234 800 100 1006",
+        "website": "https://example.com/kaduna-learning",
+        "image": "kaduna-learning-centre.svg",
+        "membershipLevel": 1,
+        "description": "An education and training organization providing professional development, digital skills, and entrepreneurship programs."
+    },
+    {
+        "name": "Royal Savannah Hotel",
+        "tagline": "Comfort in the heart of Kaduna",
+        "address": "45 Tafawa Balewa Way, Kaduna, Kaduna State",
+        "phone": "+234 800 100 1007",
+        "website": "https://example.com/royal-savannah",
+        "image": "royal-savannah-hotel.svg",
+        "membershipLevel": 2,
+        "description": "A hospitality business offering accommodation, conference facilities, dining, and event services for residents and visitors."
+    },
+    {
+        "name": "Kaduna Logistics Network",
+        "tagline": "Moving businesses forward",
+        "address": "19 Lagos Street, Kaduna, Kaduna State",
+        "phone": "+234 800 100 1008",
+        "website": "https://example.com/kaduna-logistics",
+        "image": "kaduna-logistics-network.svg",
+        "membershipLevel": 1,
+        "description": "A logistics company providing local delivery, transportation, warehousing, and business distribution services."
+    }
+]

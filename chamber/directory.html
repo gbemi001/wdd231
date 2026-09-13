@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore the Kaduna Chamber of Commerce business directory and discover local businesses, services, and organizations in Kaduna, Nigeria.">
+
+    <meta name="author" content="OLUWAGBEMI YOLOYE">
+
+    <title>Directory | Kaduna Chamber of Commerce</title>
+
+    <meta property="og:title" content="Kaduna Chamber of Commerce | Business Directory">
+
+    <meta property="og:description"
+        content="Explore businesses and organizations that are members of the Kaduna Chamber of Commerce.">
+
+    <meta property="og:image" content="https://example.com/chamber/images/kaduna-chamber-social.jpg">
+
+    <meta property="og:url" content="https://example.com/chamber/directory.html">
+
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+
+            <a class="brand" href="index.html" aria-label="Kaduna Chamber of Commerce Home">
+                <img src="images/logo.svg" alt="" width="50" height="50">
+
+                <span>Kaduna Chamber of Commerce</span>
+            </a>
+
+            <button id="menu-button" class="menu-button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html" class="active" aria-current="page">
+                    Directory
+                </a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+
+            <button id="theme-button" class="theme-button" aria-label="Toggle dark mode">
+                ◐
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="page-heading">
+            <h1>Directory</h1>
+
+            <div class="directory-controls" aria-label="Directory display options">
+                <button id="grid-button" class="view-button active-view" type="button"
+                    aria-label="Display businesses in a grid" aria-pressed="true">
+                    Grid
+                </button>
+
+                <button id="list-button" class="view-button" type="button" aria-label="Display businesses as a list"
+                    aria-pressed="false">
+                    List
+                </button>
+            </div>
+        </section>
+
+
+        <section id="member-cards" class="member-grid" aria-label="Chamber members" aria-live="polite">
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-contact">
+            <p>
+                <strong>Kaduna Chamber of Commerce</strong>
+            </p>
+
+            <p>123 Ahmadu Bello Way</p>
+            <p>Kaduna, Kaduna State, Nigeria</p>
+            <p>info@kadunachamber.org</p>
+            <p>+234 800 123 4567</p>
+        </div>
+
+
+        <div class="social-links">
+
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                YouTube
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                Facebook
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                LinkedIn
+            </a>
+
+        </div>
+
+
+        <div class="footer-development">
+
+            <p>WDD231 Class Project</p>
+
+            <p>
+                OLUWAGBEMI YOLOYE
+            </p>
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Kaduna Chamber of Commerce
+            </p>
+
+            <p>
+                Last Modification:
+                <span id="last-modified"></span>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

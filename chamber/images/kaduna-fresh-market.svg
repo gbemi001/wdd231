@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180">
+    <rect width="200" height="180" rx="20" fill="#F5F7F5"></rect>
+
+    <circle cx="100" cy="85" r="48" fill="none" stroke="#D4A017" stroke-width="10"></circle>
+
+    <path d="M62 118 L100 48 L138 118" fill="none" stroke="#006B3F" stroke-width="10"></path>
+
+    <text x="100" y="153" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#1F2933">
+        KBH
+    </text>
+</svg>
