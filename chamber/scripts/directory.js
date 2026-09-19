@@ -7,11 +7,6 @@ const themeButton = document.querySelector("#theme-button");
 const currentYear = document.querySelector("#current-year");
 const lastModified = document.querySelector("#last-modified");
 
-
-/* =========================================
-   NAVIGATION
-   ========================================= */
-
 menuButton.addEventListener("click", () => {
     const isOpen = navigation.classList.toggle("open");
 
@@ -23,11 +18,6 @@ menuButton.addEventListener("click", () => {
 
     menuButton.textContent = isOpen ? "✕" : "☰";
 });
-
-
-/* =========================================
-   MEMBERSHIP LEVEL
-   ========================================= */
 
 function getMembershipLevel(level) {
     switch (level) {
@@ -41,11 +31,6 @@ function getMembershipLevel(level) {
             return "Member";
     }
 }
-
-
-/* =========================================
-   DISPLAY MEMBERS
-   ========================================= */
 
 function displayMembers(members) {
 
@@ -110,11 +95,6 @@ function displayMembers(members) {
     });
 }
 
-
-/* =========================================
-   FETCH MEMBER DATA
-   ========================================= */
-
 async function getMembers() {
 
     try {
@@ -147,11 +127,6 @@ async function getMembers() {
     }
 }
 
-
-/* =========================================
-   GRID VIEW
-   ========================================= */
-
 gridButton.addEventListener("click", () => {
 
     membersContainer.classList.remove("member-list");
@@ -164,11 +139,6 @@ gridButton.addEventListener("click", () => {
     listButton.setAttribute("aria-pressed", "false");
 });
 
-
-/* =========================================
-   LIST VIEW
-   ========================================= */
-
 listButton.addEventListener("click", () => {
 
     membersContainer.classList.remove("member-grid");
@@ -180,11 +150,6 @@ listButton.addEventListener("click", () => {
     listButton.setAttribute("aria-pressed", "true");
     gridButton.setAttribute("aria-pressed", "false");
 });
-
-
-/* =========================================
-   DARK MODE
-   ========================================= */
 
 themeButton.addEventListener("click", () => {
 
@@ -204,19 +169,9 @@ themeButton.addEventListener("click", () => {
         darkModeEnabled ? "☀" : "◐";
 });
 
-
-/* =========================================
-   FOOTER
-   ========================================= */
-
 currentYear.textContent = new Date().getFullYear();
 
 lastModified.textContent =
     document.lastModified;
-
-
-/* =========================================
-   LOAD DIRECTORY
-   ========================================= */
 
 getMembers();

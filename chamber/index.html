@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Welcome to the Kaduna Chamber of Commerce. Discover local businesses, upcoming events, current weather, and opportunities to connect with Kaduna's business community.">
+
+    <meta name="author" content="OLUWAGBEMI YOLOYE">
+
+    <title>Home | Kaduna Chamber of Commerce</title>
+
+    <meta property="og:title" content="Kaduna Chamber of Commerce">
+
+    <meta property="og:description"
+        content="Connect with businesses, discover local opportunities, and grow with the Kaduna Chamber of Commerce.">
+
+    <meta property="og:image"
+        content="https://example.com/chamber/images/kaduna-chamber-social.jpg">
+
+    <meta property="og:url"
+        content="https://example.com/chamber/index.html">
+
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <a class="brand" href="index.html"
+                aria-label="Kaduna Chamber of Commerce Home">
+
+                <img
+                    src="images/logo.svg"
+                    alt=""
+                    width="50"
+                    height="50"
+                >
+
+                <span>Kaduna Chamber of Commerce</span>
+
+            </a>
+
+
+            <button
+                id="menu-button"
+                class="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
+                ☰
+            </button>
+
+
+            <nav
+                id="primary-navigation"
+                class="primary-navigation"
+                aria-label="Primary navigation"
+            >
+
+                <a
+                    href="index.html"
+                    class="active"
+                    aria-current="page"
+                >
+                    Home
+                </a>
+
+                <a href="directory.html">
+                    Directory
+                </a>
+
+                <a href="join.html">
+                    Join
+                </a>
+
+                <a href="discover.html">
+                    Discover
+                </a>
+
+            </nav>
+
+
+            <button
+                id="theme-button"
+                class="theme-button"
+                aria-label="Toggle dark mode"
+            >
+                ◐
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <img
+                src="images/kaduna-hero.jpg"
+                alt="Kaduna city landscape"
+                width="1200"
+                height="500"
+            >
+
+            <div class="hero-content">
+
+                <h1>
+                    Growing Kaduna's Business Community
+                </h1>
+
+                <p>
+                    Connect with local businesses, discover opportunities,
+                    and help build a stronger business community in Kaduna.
+                </p>
+
+                <a class="hero-button" href="join.html">
+                    Join the Chamber
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOME PAGE CONTENT -->
+
+        <div class="home-content">
+
+
+            <!-- CURRENT EVENTS -->
+
+            <section class="home-section events-section">
+
+                <h2>
+                    Current Events
+                </h2>
+
+                <article class="event-card">
+
+                    <h3>
+                        Kaduna Business Networking Forum
+                    </h3>
+
+                    <p class="event-date">
+                        September 26, 2026
+                    </p>
+
+                    <p>
+                        Connect with entrepreneurs, business owners,
+                        and professionals from across Kaduna while
+                        exploring new opportunities for collaboration.
+                    </p>
+
+                    <a href="join.html">
+                        Learn More
+                    </a>
+
+                </article>
+
+
+                <article class="event-card">
+
+                    <h3>
+                        Small Business Growth Workshop
+                    </h3>
+
+                    <p class="event-date">
+                        October 10, 2026
+                    </p>
+
+                    <p>
+                        A practical workshop focused on helping local
+                        businesses improve their digital presence,
+                        customer relationships, and business operations.
+                    </p>
+
+                    <a href="join.html">
+                        Register Interest
+                    </a>
+
+                </article>
+
+            </section>
+
+
+            <!-- WEATHER -->
+
+            <section class="home-section weather-section">
+
+                <h2>
+                    Kaduna Weather
+                </h2>
+
+                <div id="current-weather" class="current-weather">
+
+                    <p>
+                        Loading current weather...
+                    </p>
+
+                </div>
+
+
+                <div id="forecast" class="forecast">
+
+                    <p>
+                        Loading three-day forecast...
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- SPOTLIGHTS -->
+
+            <section class="home-section spotlights-section">
+
+                <h2>
+                    Chamber Member Spotlights
+                </h2>
+
+                <div
+                    id="spotlight-container"
+                    class="spotlight-grid"
+                    aria-live="polite"
+                >
+
+                    <p>
+                        Loading member spotlights...
+                    </p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-contact">
+
+            <p>
+                <strong>
+                    Kaduna Chamber of Commerce
+                </strong>
+            </p>
+
+            <p>
+                123 Ahmadu Bello Way
+            </p>
+
+            <p>
+                Kaduna, Kaduna State, Nigeria
+            </p>
+
+            <p>
+                info@kadunachamber.org
+            </p>
+
+            <p>
+                +234 800 123 4567
+            </p>
+
+        </div>
+
+
+        <div class="social-links">
+
+            <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+            >
+                YouTube
+            </a>
+
+            <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+            >
+                Facebook
+            </a>
+
+            <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+            >
+                LinkedIn
+            </a>
+
+        </div>
+
+
+        <div class="footer-development">
+
+            <p>
+                WDD231 Class Project
+            </p>
+
+            <p>
+                OLUWAGBEMI YOLOYE
+            </p>
+
+            <p>
+                &copy;
+                <span id="current-year"></span>
+                Kaduna Chamber of Commerce
+            </p>
+
+            <p>
+                Last Modification:
+                <span id="last-modified"></span>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
