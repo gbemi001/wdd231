@@ -78,6 +78,26 @@
     }
 }
 
+@media screen and (min-width: 700px) {
+
+    .join-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.8fr);
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .membership-form-section,
+    .membership-levels {
+        margin-bottom: 0;
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 @media screen and (min-width: 1000px) {
 
     .site-header {

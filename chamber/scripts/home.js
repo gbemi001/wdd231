@@ -11,11 +11,6 @@ const forecastContainer = document.querySelector("#forecast");
 const spotlightContainer =
     document.querySelector("#spotlight-container");
 
-
-/* =========================================
-   NAVIGATION
-   ========================================= */
-
 menuButton.addEventListener("click", () => {
 
     const isOpen =
@@ -37,11 +32,6 @@ menuButton.addEventListener("click", () => {
         isOpen ? "✕" : "☰";
 });
 
-
-/* =========================================
-   DARK MODE
-   ========================================= */
-
 themeButton.addEventListener("click", () => {
 
     document.body.classList.toggle("dark-mode");
@@ -60,26 +50,11 @@ themeButton.addEventListener("click", () => {
         darkModeEnabled ? "☀" : "◐";
 });
 
-
-/* =========================================
-   FOOTER
-   ========================================= */
-
 currentYear.textContent =
     new Date().getFullYear();
 
 lastModified.textContent =
     document.lastModified;
-
-
-/* =========================================
-   WEATHER SETTINGS
-   ========================================= */
-
-/*
-    Replace YOUR_API_KEY with your actual
-    OpenWeatherMap API key.
-*/
 
 const API_KEY = "294e1607271a1005ed7a75d60fd46604";
 
@@ -89,10 +64,6 @@ const WEATHER_URL =
 const FORECAST_URL =
     `https://api.openweathermap.org/data/2.5/forecast?lat=10.5105&lon=7.4165&units=metric&appid=${API_KEY}`;
 
-
-/* =========================================
-   WEATHER
-   ========================================= */
 
 async function getWeather() {
 
@@ -153,10 +124,6 @@ async function getWeather() {
 }
 
 
-/* =========================================
-   CURRENT WEATHER
-   ========================================= */
-
 function displayCurrentWeather(data) {
 
     const temperature =
@@ -196,10 +163,6 @@ function displayCurrentWeather(data) {
     `;
 }
 
-
-/* =========================================
-   THREE-DAY FORECAST
-   ========================================= */
 
 function displayForecast(data) {
 
@@ -281,10 +244,6 @@ function displayForecast(data) {
 }
 
 
-/* =========================================
-   MEMBER LEVEL
-   ========================================= */
-
 function getMembershipLevel(level) {
 
     if (level === 3) {
@@ -299,10 +258,6 @@ function getMembershipLevel(level) {
 }
 
 
-/* =========================================
-   RANDOM SPOTLIGHT SELECTION
-   ========================================= */
-
 function getRandomMembers(members, number) {
 
     const shuffled =
@@ -313,10 +268,6 @@ function getRandomMembers(members, number) {
     return shuffled.slice(0, number);
 }
 
-
-/* =========================================
-   DISPLAY SPOTLIGHTS
-   ========================================= */
 
 function displaySpotlights(members) {
 
@@ -398,10 +349,6 @@ function displaySpotlights(members) {
 }
 
 
-/* =========================================
-   FETCH MEMBERS
-   ========================================= */
-
 async function getSpotlights() {
 
     try {
@@ -434,10 +381,6 @@ async function getSpotlights() {
                     member.membershipLevel === 3
             );
 
-
-        /*
-            Randomly select 2 or 3 members.
-        */
 
         const numberOfSpotlights =
             Math.random() < 0.5 ? 2 : 3;
@@ -474,10 +417,6 @@ async function getSpotlights() {
     }
 }
 
-
-/* =========================================
-   INITIALIZE HOME PAGE
-   ========================================= */
 
 getWeather();
 

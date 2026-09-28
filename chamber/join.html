@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Join the Kaduna Chamber of Commerce and connect your business with opportunities, training, networking, and community growth.">
+
+    <meta name="author" content="OLUWAGBEMI YOLOYE">
+
+    <title>Join | Kaduna Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.svg">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+
+            <a class="brand" href="index.html">
+                <img src="images/logo.svg"
+                     alt="Kaduna Chamber of Commerce logo"
+                     width="60"
+                     height="60">
+                <span>Kaduna Chamber of Commerce</span>
+            </a>
+
+            <button class="menu-button"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="primary-navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a class="active" href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+
+            <button class="theme-button"
+                    type="button"
+                    aria-label="Toggle dark mode">
+                ◐
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="page-heading">
+            <h1>Join the Chamber</h1>
+            <p>
+                Become a member of the Kaduna Chamber of Commerce
+                and connect with businesses across Kaduna.
+            </p>
+        </div>
+
+
+        <div class="join-layout">
+            <section class="membership-form-section">
+
+                <h2>Membership Application</h2>
+
+                <form action="thankyou.html"
+                      method="get"
+                      class="membership-form">
+
+                    <label for="first-name">
+                        First Name
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="first-name"
+                            title="Enter your first name."
+                            autocomplete="given-name"
+                            required>
+                    </label>
+
+
+                    <label for="last-name">
+                        Last Name
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="last-name"
+                            title="Enter your last name."
+                            autocomplete="family-name"
+                            required>
+                    </label>
+
+
+                    <label for="organization-title">
+                        Organizational Title
+                        <input
+                            type="text"
+                            id="organization-title"
+                            name="organization-title"
+                            title="Enter your organizational title. Minimum seven characters. Only letters, spaces, and hyphens are allowed."
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z -]{7,}"
+                            required>
+                    </label>
+
+
+                    <label for="email">
+                        Email Address
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            title="Enter your email address."
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required>
+                    </label>
+
+
+                    <label for="phone">
+                        Mobile Phone Number
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            title="Enter your mobile phone number."
+                            autocomplete="tel"
+                            required>
+                    </label>
+
+
+                    <label for="organization">
+                        Business / Organization Name
+                        <input
+                            type="text"
+                            id="organization"
+                            name="organization"
+                            title="Enter your business or organization name."
+                            autocomplete="organization"
+                            required>
+                    </label>
+
+
+                    <label for="membership-level">
+                        Membership Level
+                        <select
+                            id="membership-level"
+                            name="membership-level"
+                            title="Select your preferred membership level."
+                            required>
+
+                            <option value="" disabled selected>
+                                Select a membership level
+                            </option>
+
+                            <option value="np">
+                                NP Membership — No Fee
+                            </option>
+
+                            <option value="bronze">
+                                Bronze Membership
+                            </option>
+
+                            <option value="silver">
+                                Silver Membership
+                            </option>
+
+                            <option value="gold">
+                                Gold Membership
+                            </option>
+
+                        </select>
+                    </label>
+
+
+                    <label for="description">
+                        Business / Organization Description
+                        <textarea
+                            id="description"
+                            name="description"
+                            title="Describe your business or organization."
+                            rows="6"></textarea>
+                    </label>
+
+
+                    <input
+                        type="hidden"
+                        id="timestamp"
+                        name="timestamp">
+
+
+                    <input
+                        class="submit-button"
+                        type="submit"
+                        value="Submit Membership Application">
+
+                </form>
+
+            </section>
+
+
+            <aside class="membership-levels">
+
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+
+                    <!-- NP -->
+                    <article class="membership-card card-np">
+                        <h3>NP Membership</h3>
+                        <p>For non-profit organizations.</p>
+
+                        <button
+                            type="button"
+                            class="modal-link"
+                            data-modal="np-modal">
+                            View Benefits
+                        </button>
+                    </article>
+
+
+                    <!-- Bronze -->
+                    <article class="membership-card card-bronze">
+                        <h3>Bronze Membership</h3>
+                        <p>Essential benefits for growing businesses.</p>
+
+                        <button
+                            type="button"
+                            class="modal-link"
+                            data-modal="bronze-modal">
+                            View Benefits
+                        </button>
+                    </article>
+
+
+                    <!-- Silver -->
+                    <article class="membership-card card-silver">
+                        <h3>Silver Membership</h3>
+                        <p>Expanded opportunities for established businesses.</p>
+
+                        <button
+                            type="button"
+                            class="modal-link"
+                            data-modal="silver-modal">
+                            View Benefits
+                        </button>
+                    </article>
+
+
+                    <!-- Gold -->
+                    <article class="membership-card card-gold">
+                        <h3>Gold Membership</h3>
+                        <p>Premium exposure and chamber benefits.</p>
+
+                        <button
+                            type="button"
+                            class="modal-link"
+                            data-modal="gold-modal">
+                            View Benefits
+                        </button>
+                    </article>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+
+        <dialog id="np-modal" class="membership-modal">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close dialog">
+                    &times;
+                </button>
+
+                <h2>NP Membership</h2>
+
+                <p class="membership-price">No Fee</p>
+
+                <ul>
+                    <li>Membership for qualifying non-profit organizations.</li>
+                    <li>Chamber networking opportunities.</li>
+                    <li>Access to selected chamber events.</li>
+                    <li>Community and business development opportunities.</li>
+                </ul>
+            </div>
+        </dialog>
+
+
+        <dialog id="bronze-modal" class="membership-modal">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close dialog">
+                    &times;
+                </button>
+
+                <h2>Bronze Membership</h2>
+
+                <p class="membership-price">₦25,000 / year</p>
+
+                <ul>
+                    <li>All NP-level networking opportunities.</li>
+                    <li>Access to selected training sessions.</li>
+                    <li>Discounts on selected chamber events.</li>
+                    <li>Business listing in the chamber directory.</li>
+                </ul>
+            </div>
+        </dialog>
+
+
+        <dialog id="silver-modal" class="membership-modal">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close dialog">
+                    &times;
+                </button>
+
+                <h2>Silver Membership</h2>
+
+                <p class="membership-price">₦50,000 / year</p>
+
+                <ul>
+                    <li>All Bronze membership benefits.</li>
+                    <li>Greater discounts on chamber events.</li>
+                    <li>Priority access to selected training programs.</li>
+                    <li>Business promotional opportunities.</li>
+                    <li>Enhanced business visibility through chamber activities.</li>
+                </ul>
+            </div>
+        </dialog>
+
+
+        <dialog id="gold-modal" class="membership-modal">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close dialog">
+                    &times;
+                </button>
+
+                <h2>Gold Membership</h2>
+
+                <p class="membership-price">₦100,000 / year</p>
+
+                <ul>
+                    <li>All Silver membership benefits.</li>
+                    <li>Premium business visibility opportunities.</li>
+                    <li>Priority access to chamber events and training.</li>
+                    <li>Enhanced advertising opportunities.</li>
+                    <li>Potential spotlight placement on chamber promotions.</li>
+                    <li>Premium networking opportunities.</li>
+                </ul>
+            </div>
+        </dialog>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-contact">
+            <h2>Kaduna Chamber of Commerce</h2>
+            <p>Kaduna, Nigeria</p>
+        </div>
+
+        <div class="footer-social">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+        </div>
+
+        <div class="footer-info">
+            <p>
+                &copy; <span id="current-year"></span>
+                Kaduna Chamber of Commerce
+            </p>
+
+            <p>
+                WDD231 | OLUWAGBEMI YOLOYE
+            </p>
+
+            <p>
+                Last Modified:
+                <span id="last-modified"></span>
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
