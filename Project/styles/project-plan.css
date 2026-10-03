@@ -126,14 +126,14 @@ li {
 
 .important-note {
     background-color: var(--accent-gold);
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 footer {
     background-color: var(--primary-green);
     color: var(--white);
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     border-top: 4px solid var(--accent-gold);
 }
 
