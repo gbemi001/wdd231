@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Discover places, landmarks, cultural sites, and natural attractions around Kaduna, Nigeria.">
+    <meta name="author" content="OLUWAGBEMI YOLOYE">
+
+    <title>Discover | Kaduna Chamber of Commerce</title>
+
+    <meta property="og:title" content="Discover Kaduna | Kaduna Chamber of Commerce">
+    <meta property="og:description"
+        content="Explore landmarks, heritage sites, natural attractions, and recreational destinations in Kaduna State.">
+    <meta property="og:image" content="images/kaduna-hero.jpg">
+    <meta property="og:url" content="https://example.com/chamber/discover.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Kaduna Chamber of Commerce Home">
+                <img src="images/logo.svg" alt="" width="50" height="50">
+                <span>Kaduna Chamber of Commerce</span>
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button"
+                aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html" class="active" aria-current="page">Discover</a>
+            </nav>
+
+            <button id="theme-button" class="theme-button" type="button" aria-label="Toggle dark mode">
+                ◐
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="discover-heading">
+            <h1>Discover Kaduna</h1>
+            <p>
+                Explore the history, culture, natural beauty, and recreational places that help make Kaduna
+                an attractive place to live, visit, and do business.
+            </p>
+        </section>
+
+        <aside id="visitor-message" class="visitor-message" aria-live="polite">
+            Welcome! Let us know if you have any questions.
+        </aside>
+
+        <section id="discover-cards" class="discover-grid" aria-label="Places of interest in Kaduna">
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Kaduna Chamber of Commerce</strong></p>
+            <p>123 Ahmadu Bello Way</p>
+            <p>Kaduna, Kaduna State, Nigeria</p>
+            <p>info@kadunachamber.org</p>
+            <p>+234 800 123 4567</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YouTube</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+
+        <div class="footer-development">
+            <p>WDD231 Class Project</p>
+            <p>OLUWAGBEMI YOLOYE</p>
+            <p>&copy; <span id="current-year"></span> Kaduna Chamber of Commerce</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -257,3 +257,60 @@
     }
 
 }
+/* ==============================
+   DISCOVER PAGE - MEDIUM
+   ============================== */
+
+@media screen and (min-width: 641px) {
+    .discover-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+        grid-template-areas:
+            "item1 item2"
+            "item1 item3"
+            "item4 item3"
+            "item5 item6"
+            "item7 item6"
+            "item8 item8";
+    }
+
+    .discover-card img {
+        height: 200px;
+    }
+
+    .discover-card:hover img {
+        transform: scale(1.04);
+        filter: saturate(1.15) contrast(1.05);
+    }
+
+    .discover-card figure {
+        overflow: hidden;
+    }
+
+    .discover-card img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+}
+
+/* ==============================
+   DISCOVER PAGE - LARGE
+   ============================== */
+
+@media screen and (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1.5rem;
+        grid-template-areas:
+            "item1 item1 item2 item3"
+            "item4 item5 item2 item6"
+            "item7 item5 item8 item8";
+    }
+
+    .discover-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .discover-card img {
+        height: 200px;
+    }
+}
